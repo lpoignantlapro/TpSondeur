@@ -1,0 +1,44 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button1Click(TObject *Sender)
+//{
+//	int error;
+//	error = port->ouvrirport();
+//	if(error != 0)
+//	{
+//		char buffer[20];
+//
+//		itoa(GetLastError(),buffer,10);
+//
+//
+//
+//		MessageBox(NULL, buffer, "Fail", 0);
+//	}
+//
+//	DWORD threadId;
+//	CreateThread(NULL, 0, &RecvThread, this, 0, &threadId);
+//	Timer1->Enabled = true;
+//}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button2Click(TObject *Sender)
+{
+	Button4->Enabled = false;
+	Form1->Close();
+}
+//---------------------------------------------------------------------------
+
